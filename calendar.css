@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.hero{
+    margin-bottom: 30px;
+    width: 95%;
+    height: 80vh;
+    background: linear-gradient();
+    position: absolute;
+    left: 2rem;
+    
+
+}
+
+#calendar{
+    width: 100%;
+    position: relative;
+    margin-top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+}

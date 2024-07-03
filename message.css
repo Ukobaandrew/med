@@ -1,0 +1,200 @@
+
+.meds{
+    text-align: center;
+    padding: 1%;
+}
+.reference{
+    /* display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */ 
+    height: 85vh;
+    flex-direction: column;
+    padding: 5%;
+    background-color: #fff;
+    
+}
+.inputfirstname,.inputlastname,.inputemailname,.inputnumber{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 100%;
+    
+}
+.inputfirstname,.inputemailname{
+padding: 0% 4% 0% 0%;
+}
+.inputname,.mail{
+    display: flex;
+    width: 100%;
+    padding: 2% 0%;
+   
+}
+.inputlastname,.inputnumber{
+    padding: 0% 0% 0% 4%;
+}
+#email{
+    width: 100%;
+}
+.more,.lad{
+    display: flex;
+    flex-direction: column;
+    padding: 2% 0%;
+}
+.submit{
+    width: 100%;
+    font-size: 100%;
+    padding: 1%;
+    background-color: blueviolet;
+}
+#Request{
+    height: 20vh;
+    background: rgb(222, 219, 219);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 7px 17px 7px 7px;
+    position: relative;
+}
+.Request-made{
+    text-align: center;
+    padding: 10%;
+}
+.items{
+    background-color: #cccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+}
+thead {
+    padding: 20%;
+    background-color: #ffff;
+}
+
+tbody {
+    background-color: #ddd;
+}
+
+
+
+
+.your-request{
+    padding: 2%;
+}
+/* Default styles */
+
+/* Styles for tablets and smaller desktop screens */
+@media (max-width: 1024px) {
+    .reference {
+        padding: 3%;
+    }
+
+    .inputfirstname,
+    .inputlastname,
+    .inputemailname,
+    .inputnumber {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .inputfirstname,
+    .inputemailname {
+        padding: 0;
+    }
+
+    .inputname,
+    .mail {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .inputlastname,
+    .inputnumber {
+        padding: 0;
+    }
+
+    #email {
+        width: 100%;
+    }
+
+    .more,
+    .lad {
+        padding: 0;
+    }
+
+    .submit {
+        width: 100%;
+    }
+
+    #Request {
+        height: 15vh;
+        padding: 7px;
+    }
+
+    .Request-made {
+        padding: 10%;
+    }
+}
+
+/* Styles for smaller devices like smartphones */
+@media (max-width: 768px) {
+    #sidebar {
+        display: none;
+    }
+
+    #content {
+        padding-top: 20px;
+    }
+
+    .reference {
+        padding: 20px 10px; /* Increased padding for better spacing on mobile */
+        height: auto;
+    }
+
+    .inputfirstname,
+    .inputlastname,
+    .inputemailname,
+    .inputnumber {
+        flex-direction: column;
+        padding: 10px; /* Increased padding for all sides */
+    }
+
+    .inputfirstname,
+    .inputemailname {
+        padding-right: 10px; /* Added right padding for better spacing */
+    }
+
+    .inputname,
+    .mail {
+        flex-direction: column;
+        padding: 10px; /* Increased padding for all sides */
+    }
+
+    .inputlastname,
+    .inputnumber {
+        padding-left: 10px; /* Added left padding for better spacing */
+    }
+
+    #email {
+        width: 100%;
+    }
+
+    .more,
+    .lad {
+        padding: 10px; /* Increased padding for all sides */
+    }
+
+    .submit {
+        width: 100%;
+        padding: 10px; /* Increased padding for submit button */
+    }
+
+    #Request {
+        height: 15vh;
+        padding: 10px; /* Increased padding for textarea */
+    }
+
+    .Request-made {
+        padding: 20px; /* Increased padding for better spacing */
+    }
+}

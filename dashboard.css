@@ -1,0 +1,401 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eeee;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 100vh;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    transition: padding 0.3s ease;
+}
+
+#sidebar {
+    position: fixed;
+    width: 260px;
+    background: white;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow-y: auto;
+    scrollbar-width: none;
+    transition: transform 0.3s ease, width 0.3s ease, left 0.3s ease;
+}
+
+#sidebar::-webkit-scrollbar {
+    display: none;
+}
+
+#sidebar.active {
+    transform: translateX(-100%);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+#sidebar .brand {
+    font-size: 180%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 11vh;
+    font-weight: 700;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    color: blueviolet;
+}
+
+.vitals {
+    padding: 5% 2%;
+}
+
+.appointment-info {
+    padding: 5% 2%;
+}
+
+.Appointments {
+    padding: 5% 2%;
+}
+
+span {
+    color: purple;
+}
+
+.top {
+    padding: 5% 0% 0% 0%;
+}
+
+#sidebar .icon {
+    min-width: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sidebar .side-menu {
+    margin: 36px 0;
+    padding: 0 20px;
+}
+
+#sidebar .side-menu a {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: rgb(119, 117, 117);
+    padding: 12px 16px 12px 0;
+    transition: all .3s ease;
+    border-radius: 10px;
+    gap: 0.5rem;
+    line-height: 35px;
+}
+
+#sidebar .side-menu>li>a:hover {
+    background: gainsboro;
+}
+
+#sidebar .side-menu>li>a.active,
+#sidebar .side-menu>li>a.active:hover {
+    background: blueviolet;
+    color: rgb(221, 219, 219);
+}
+
+.help {
+    background-color: blueviolet;
+    position: absolute;
+    padding: 20px;
+    border-radius: 10px;
+    top: 80%;
+    left: 20%;
+    text-align: center;
+    justify-content: space-around;
+    margin-right: 16px;
+    color: #fff;
+}
+
+.helppics img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: #fff 5px solid;
+    border-color: 20px solid white;
+    position: absolute;
+    bottom: 87%;
+    left: 32%;
+}
+
+#content {
+    position: relative;
+    width: calc(100% - 260px);
+    left: 260px;
+    transition: transform 0.3s ease, width 0.3s ease, left 0.3s ease;
+}
+.content2.expanded-padding{
+    padding-left: 2rem;
+}
+#content.active {
+    width: 100%;
+    left: 0;
+}
+
+nav {
+    background: white;
+    height: 18vh;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    display: flex;
+    gap: 2rem;
+}
+
+nav .toggle-sidebar {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+nav form {
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-right {
+    width: auto;
+}
+
+nav .form-group,
+#search {
+    width: 60%;
+    background: rgb(222, 219, 219);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 7px 17px 7px 7px;
+    position: relative;
+}
+
+input {
+    background: rgb(222, 219, 219);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 7px 17px 7px 7px;
+    position: relative;
+}
+
+nav .form-group .icon {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+}
+
+main {
+    width: 90%;
+    padding: 30px;
+}
+
+main .title {
+    font-size: 180%;
+    font-weight: 600;
+    margin-bottom: 2%;
+}
+
+main .link {
+    display: flex;
+    grid-gap: 6px;
+}
+
+main .link li,
+main .link li a {
+    font-size: 14px;
+}
+
+main .link li a {
+    color: rgb(102, 102, 252);
+}
+
+main .link li a.active,
+main .link li.divider {
+    color: darkgray;
+    pointer-events: none;
+}
+
+main .reference {
+    margin-top: 36px;
+}
+
+main .reference .card1 {
+    padding: 36px;
+    border-radius: 20px;
+    background: blueviolet;
+    box-shadow: rgb(92, 91, 91);
+}
+
+main .card1 .head1 h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+}
+
+main .card1 .head1 p {
+    margin-top: 1.5%;
+    font-size: 15px;
+    color: rgb(214, 213, 213);
+}
+
+main h3 {
+    color: rgb(71, 71, 71);
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+main .info-data {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: 1%;
+    flex-wrap: wrap;
+}
+
+main .info-data .card {
+    padding: 30px;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+main .card .head {
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+main .card .head h4 {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+main .card .head p {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+main .card .head p span {
+    color: gray;
+    font-size: 10px;
+}
+
+#calendar {
+    width: 38%;
+    height: 55vh;
+    position: absolute;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#calendar.padding{
+width: 60%;
+}
+
+thead {
+    padding: 20%;
+    background-color: #ffff;
+}
+
+tbody {
+    background-color: #ddd;
+}
+
+.content-table th,
+.content-table td {
+    padding: 1vh 2vw;
+}
+
+.sum {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dock {
+    width: 200px;
+    height: 200px;
+    top: 22%;
+    position: absolute;
+    left: 40%;
+}
+.dock.dot{
+    left: 30%;
+    top: 27%;
+}
+
+.img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    #sidebar {
+        width: 200px;
+    }
+
+    #content {
+        width: calc(100% - 200px);
+        left: 200px;
+    }
+
+    nav .form-group,
+    #search {
+        width: 50%;
+    }
+
+    main .info-data {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+
+    #calendar {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #sidebar {
+        width: 60px;
+    }
+
+    #content {
+        width: calc(100% - 60px);
+        left: 60px;
+    }
+
+    nav .form-group,
+    #search {
+        width: 40%;
+    }
+
+    main .info-data {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    nav .form-group,
+    #search {
+        width: 30%;
+    }
+}

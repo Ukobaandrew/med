@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(248, 247, 247);
+}
+#content1{
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+}
+.top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+button{
+    color: #fff;
+    background-color: blueviolet;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+.container{
+    border: 2px solid #ecebeb;
+    background-color: #fff;;
+}
+.head{
+    display: flex;
+    gap: 1rem;
+    background-color: blueviolet;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 10px;
+}
+.head img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.head h3{
+    position: relative;
+    top: 7px;
+}
+.ct,
+.ct1,
+.ct2{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #dddddd;
+    margin-top: 15px;
+    padding: 5px;
+    
+}
+.ct2 h3{
+    color: rgb(164, 163, 163);
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: small;
+}
+
+.ct1 h3{
+    color: rgb(164, 163, 163);
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: small;
+}
+.ct h3{
+    color: rgb(164, 163, 163);
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: small;
+}
+.ct{
+    margin-top: 15px;
+}
+.display{
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #fff;
+}
+.bdy{
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+.bdy input{
+    display: block;
+    gap: 2rem;
+}
+#imageDisplay{
+    margin-top: 10px;
+    max-width: 200px;
+    max-height: 400px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    float: left;
+}
+.right input{
+    padding: 10px;
+    width: 30vw;
+}
+.btn button{
+    margin-top: 60px;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 100%;
+    padding: 1%;
+
+}

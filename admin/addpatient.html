@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Patient</title>
+    <link rel="stylesheet" href="patient.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="sidebar">
+
+        <div class="logo">
+            <img src="" alt="ccc">
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="profile">
+            <img src="" alt="">
+            <p>Super Admin</p>
+
+        </div>
+        <br>
+        <hr>
+        <ul>
+            <li><a href="dashboard.php" class="hover"><i class='bx bxs-dashboard'></i> Dashboard</a></li>
+            <li><a href="devices.php" class="hover"><i class='bx bx-laptop'></i> Device</a></li>
+            <li><a href="doctor.php" class="hover"><i class='bx bx-plus-medical'></i> Doctor</a></li>
+            <li><a href="addpatient.html" class="hover"><i class='bx bxs-user'></i> Patient</a></li>
+            <li><a href="" class="hover"><i class='bx bxs-calendar'></i> Doctor Schedule</a></li>
+            <li><a href="patappinfo.html" class="hover"><i class='bx bx-calendar-check'></i> Patient Appointment</a></li>
+            <li><a href="admin.php" class="hover"><i class='bx bxs-paste'></i> Patient case studies</a></li>
+            <li><a href="" class="hover"><i class='bx bxs-capsule'></i> Prescription</a></li>
+        </ul>
+        <div class="logout">
+            <a href="../logout.php"><i class='bx bx-exit'></i>Logout</a>
+        </div>
+
+    </div>
+    <div class="content">
+        <div class="topnavbar">
+            <div class="gotoweb">
+                <ul>
+            <li><a href=""><i class='bx bx-globe'></i>Go to website</a></li>
+        </ul>
+        </div>
+            <div class="nav2">
+                <ul>
+                    <li><a href=""><i class='bx bx-conversation'></i>Chat with us</a></li>
+                    <li><a href=""><i class='bx bx-health'></i>HealthEase</a></li>
+                    <li><a href=""><i class='bx bxs-user-circle'></i>Mr Patient</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="addpatient">
+            <div class="add">
+                <h1>Add Patient</h1>
+            </div>
+            <div class="formdiv">
+                
+               <form action="#">
+                 <div class="Namediv formdivs">
+                    <label>Name</label><br>
+                    <input type="text" placeholder="Name" name="name">
+                 </div>
+                 <div class="Emaildiv formdivs">
+                    <label>Email</label><br>
+                    <input type="email" placeholder="Email" name="email">
+                 </div>
+                 <div class="Passworddiv formdivs">
+                    <label>Password</label><br>
+                    <input type="password" placeholder="*******" name="Password">
+                 </div>
+                 <div class="Phonediv formdivs">
+                    <label>Phone</label><br>
+                    <input type="tel" placeholder="Number" name="Number">
+                 </div>
+                 <div class="Genderdiv formdivs">
+                    <label>Gender</label><br>
+                    <select>
+                        <option>Select</option>
+                        <option name="Gender" value="Male">Male</option>
+                        <option name="Gender" value="Female">Female</option>
+                    </select>
+                 </div>
+                 <div class="Bloodgroupdiv formdivs">
+                    <label>Blood Group</label><br>
+                    <select>
+                        <option>BloodGroup</option>
+                        <option name="blood-group" value="O+">O+</option>
+                        <option name="blood-group" value="O-">O-</option>
+                        <option name="blood-group" value="A+">A+</option>
+                        <option name="blood-group" value="A-">A-</option>
+                        <option name="blood-group" value="B+">B+</option>
+                        <option name="blood-group" value="B-">B-</option>
+                        <option name="blood-group" value="AB+">AB+</option>
+                        <option name="blood-group" value="AB-">AB-</option>
+
+                    </select>
+                 </div>
+                 <div class="photodiv formdivs">
+                    <label>Photo</label><br>
+                    <div class="photodiv2">
+                        <label>
+                            <input type="file">
+                        </label>
+                    </div>
+                 </div>
+                 <div class="Addressdiv formdivs">
+                    <label>Address</label><br>
+                    <textarea name="address" placeholder="Address" class="address-text-area"></textarea>
+                 </div>
+
+               </form>
+
+
+
+            </div>
+            
+            
+           
+            
+            
+        </div>
+        
+    </div>
+        
+
+
+</body>
+
+</html>

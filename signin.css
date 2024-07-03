@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(198, 220, 241);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    padding: 50px;
+    width: 30%;
+    margin-top: 120px;
+    background-color:#ffffff;
+    border-radius: 5px;
+    transform: translateY(-10%);
+    
+}
+
+h2{
+    text-align: center;
+    font-size: xx-large;
+
+}
+
+input{
+    width: 95%;
+    height: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    border-style: none;
+    border: 1px solid black;
+   
+}
+
+.check{
+    display: inline-flex;
+    white-space: nowrap;
+    justify-content: space-between;
+
+}
+
+button{
+    width: 100%; 
+    height: 20px; 
+    padding: 5%;
+    background-color: rgb(76, 184, 235);
+    border-radius: 5px;
+    border: 1px solid black;
+    display: flex;
+
+    
+
+}
+
+.sign button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff  ;
+}
+.check p{
+    padding-left: 10px;
+}
+
+.dot{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.dot button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.dot a{
+    text-decoration: none;  
+    color: rgb(0, 0, 0);
+}
+p{
+    text-align: center;
+}
+p a{
+    text-decoration: none;
+}
+.line{
+    display: flex;
+    gap: 1rem;
+}
+.line1{
+
+    height: 0.2px;
+    background-color:  grey;
+    width: 50%;
+    transform: translateY(12px);
+}

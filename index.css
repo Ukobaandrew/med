@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.topbar{
+    display: flex;
+    background-color: white;
+    position: fixed;
+    align-items: center;   
+    width: 100%;
+    height: 15vh;
+    gap: 13vw;
+}
+
+.menu {
+    background-color:  #052049;
+    width: 200%;
+    border: 0;
+    border-radius: 5px;
+    height: 5vh;
+    color: white;
+}
+.topbar .logo img{
+    height: 10vh;
+    width: 100%;
+    gap: 2vw;
+}
+.topbar .nav { 
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    
+}
+.topbar .nav nav ul{
+    display: flex;
+    gap:7vw;
+}
+.topbar .nav nav ul li{
+    list-style: none;
+}
+.topbar .nav nav ul li a{
+    text-decoration: none;
+    color: #052049;
+    font-size: 2vh
+}
+.topbar .signin{
+    display: flex;
+    align-items: center;
+}
+.topbar .signin a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder; 
+}
+.topbar .signin button{
+    width: 7vw;
+    height: 6vh;
+    background-color: #052049;
+    border: 0;
+    border-radius: 5px ;
+    padding: 5%;
+    padding-right: 10%;
+    margin-right: 10%;
+}
+.body2{
+    background-image: url(./Premium\ Photo\ _\ Background\ of\ diabetic\ disease\ concept\ with\ copy\ space\ World\ diabetes\ day\ banner.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 120vh;
+    padding: 8%;
+}
+.body2 h1{
+    color: white;
+    font-size: 400%;
+}
+.body2 h2{
+    color: #052049;
+    font-size: 160%;
+   
+}
+.body2 h3{
+    color: #052049;
+    font-size: 120%;
+}
+.body2 .plist{
+    width: 30%;
+}
+.body2 .list{
+    display: flex;
+    width: 100%;
+}
+.body2 .list .icon i{
+    font-size: 500%;
+    color: #052049;
+}
+.body2 .list h2{
+    color: #052049;
+    font-size: 4vh;
+}
+.body2 .list h4{
+    color: #052049;
+    transform: translateY(-15%);
+}

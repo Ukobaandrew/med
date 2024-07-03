@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.cont{
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.devices{
+    padding-bottom: 3%;
+
+}
+
+th,td{
+    /* width: 20vw; */
+    /* height: 3vh ; */
+    padding: 5px;
+    /* border-radius: 5px; */
+    text-align: center;
+}
+
+table{
+    /* border-radius: 10px; */
+    border-color: #ccc;
+}
+th{
+    background-color: #fff;
+    color: #535151;
+}
+td{
+    background-color: rgb(225, 238, 255);
+}
